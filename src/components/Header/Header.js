@@ -8,7 +8,7 @@ const Header = ({ title, navigation }) => (
   <HeaderWrapper>
     <Container>
       <HeaderInner>
-        <SiteTitle to="/">{title}</SiteTitle>
+        <SiteTitle to="/">株式会社チャック</SiteTitle>
         {navigation && <Navigation>{navigation}</Navigation>}
       </HeaderInner>
     </Container>

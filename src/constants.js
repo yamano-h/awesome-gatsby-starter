@@ -3,6 +3,7 @@ export const COLOR = {
   BLACK: '#000000',
   REBECCA_PURPLE: '#663399',
   BLUE: '#1a58cc',
+  SKY_BLUE: '#69C2E8',
 };
 
 export const NAV_ITEMS = [

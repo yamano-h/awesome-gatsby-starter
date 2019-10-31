@@ -4,7 +4,7 @@ import { darken } from 'polished';
 import { COLOR } from '../../constants';
 
 export const HeaderWrapper = styled.div`
-  background-color: ${COLOR.REBECCA_PURPLE};
+  background-color: ${COLOR.SKY_BLUE};
   border-bottom: 0.2rem solid ${darken(0.2, COLOR.REBECCA_PURPLE)};
 `;
 

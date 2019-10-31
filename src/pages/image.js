@@ -1,7 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import styled from 'styled-components';
+import { COLOR } from '../constants';
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -13,7 +14,18 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = () => (
+const Card = styled.div`
+  background-color: ${COLOR.SKY_BLUE};
+`;
+
+const CharaName = styled.p`
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+`;
+
+const Image = ({ name }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -26,7 +38,12 @@ const Image = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => (
+      <Card>
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <CharaName>{name}</CharaName>
+      </Card>
+    )}
   />
 );
 
