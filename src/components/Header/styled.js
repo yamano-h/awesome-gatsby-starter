@@ -4,8 +4,7 @@ import { darken } from 'polished';
 import { COLOR } from '../../constants';
 
 export const HeaderWrapper = styled.div`
-  background-color: ${COLOR.SKY_BLUE};
-  border-bottom: 0.2rem solid ${darken(0.2, COLOR.REBECCA_PURPLE)};
+  background-color: ${COLOR.BLUE02};
 `;
 
 export const HeaderInner = styled.div`
@@ -19,7 +18,7 @@ export const SiteTitle = styled.h1`
 `;
 
 export const Navigation = styled.div`
-  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-flow: nowrap row;
   align-items: flex-end;
