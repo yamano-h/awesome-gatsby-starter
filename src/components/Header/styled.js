@@ -24,6 +24,7 @@ export const Navigation = styled.div`
   align-items: flex-end;
 
   & > * {
+    font-size: 1.1rem;
     margin-left: 1rem;
     color: ${COLOR.WHITE};
     cursor: pointer;

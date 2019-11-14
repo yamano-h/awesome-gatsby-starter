@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
 
 import { Header } from '../Header';
+import { Banner } from '../Banner';
 import { Container } from '../Container';
 import { ResetStyle } from '../Reset';
 import { NAV_ITEMS } from '../../constants';
@@ -47,6 +48,7 @@ const Layout = ({ children }) => {
             <html lang="en" />
           </Helmet>
           <Header title={data.site.siteMetadata.title} navigation={navigationItems} />
+          <Banner title={data.site.siteMetadata.title}></Banner>
           <Container>{children}</Container>
         </>
       )}

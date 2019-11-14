@@ -57,7 +57,7 @@ export const ResetStyle = createGlobalStyle`
   }
 
   html {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Montserrat, Noto Serif JP;
     font-size: 16px;
     line-height: 1.5;
     color: ${COLOR.BLACK};
@@ -69,7 +69,7 @@ export const ResetStyle = createGlobalStyle`
 
   h1 {
     ${headerStyle}
-    font-size: 2.441rem;
+    font-size: 3.441rem;
   }
 
   h2 {
